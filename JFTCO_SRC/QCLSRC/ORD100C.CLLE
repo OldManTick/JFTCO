@@ -3,7 +3,7 @@
              DLTF       FILE(QTEMP/DETORD)
              MONMSG     MSGID(CPF0000)
              CRTDUPOBJ  OBJ(DETORD) FROMLIB(*LIBL) OBJTYPE(*FILE) +
-                          TOLIB(QTEMP) NEWOBJ(DETORD) DATA(*YES) CST(*NO) +
+                          TOLIB(QTEMP) NEWOBJ(DETORD) DATA(*YES) CST(*YES) +
                           TRG(*NO)
              OVRDBF     FILE(TMPDETORD) TOFILE(QTEMP/DETORD)
              CRTORD     CUID(&CUID)
