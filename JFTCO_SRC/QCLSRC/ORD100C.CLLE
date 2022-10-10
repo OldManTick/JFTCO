@@ -4,7 +4,7 @@
              MONMSG     MSGID(CPF0000)
              CRTDUPOBJ  OBJ(DETORD) FROMLIB(*LIBL) OBJTYPE(*FILE) +
                           TOLIB(QTEMP) NEWOBJ(DETORD) DATA(*NO) CST(*NO) +
-                          TRG(*NO)
+                          TRG(*YES)
              OVRDBF     FILE(TMPDETORD) TOFILE(QTEMP/DETORD)
              CRTORD     CUID(&CUID)
              /* second change */
