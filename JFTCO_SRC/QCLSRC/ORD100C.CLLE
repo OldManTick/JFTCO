@@ -6,5 +6,5 @@
              CRTDUPOBJ  OBJ(DETORD) FROMLIB(*LIBL) OBJTYPE(*FILE) +
                           TOLIB(QTEMP) NEWOBJ(DETORD) DATA(*NO) CST(*NO) +
                           TRG(*NO)
-             OVRDBF     FILE(TMPDETORD) TOFILE(QTEMP/DETORD)
+             OVRDBF     FILE(TMPDETORD) TOFILE(QTEMP/DETORD1)
              CRTORD     CUID(&CUID)
