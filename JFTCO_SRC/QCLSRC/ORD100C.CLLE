@@ -1,3 +1,4 @@
+             /* change1    */
              PGM        PARM(&CUID)
              DCL        VAR(&CUID) TYPE(*DEC) LEN(5 0)
              DLTF       FILE(QTEMP/DETORD)
