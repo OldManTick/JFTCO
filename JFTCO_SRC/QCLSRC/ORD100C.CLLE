@@ -3,8 +3,9 @@
              DCL        VAR(&CUID) TYPE(*DEC) LEN(5 0)
              DLTF       FILE(QTEMP/DETORD)
              MONMSG     MSGID(CPF0001)
-             CRTDUPOBJ  OBJ(DETORD) FROMLIB(*LIBL) OBJTYPE(*FILE) +
-                          TOLIB(QTEMP) NEWOBJ(DETORD) DATA(*NO) CST(*NO) +
-                          TRG(*NO)
+             CRTDUPOBJ  OBJ(DETORD) FROMLIB(*LIBL) +
+                          OBJTYPE(*FILE) TOLIB(QTEMP) +
+                          NEWOBJ(DETORD) TOASPDEV(*ASPDEV) +
+                          DATA(*NO) TRG(*NO)
              OVRDBF     FILE(TMPDETORD) TOFILE(QTEMP/DETORD1)
              CRTORD     CUID(&CUID)
